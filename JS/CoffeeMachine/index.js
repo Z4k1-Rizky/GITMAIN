@@ -30,7 +30,15 @@ const displayStock = stock => {
 displayStock(coffeeStock);
 */
 
-import { coffeeStock as stock, isCoffeeMachineReady} from "./state.js";
+/*import { coffeeStock as stock, isCoffeeMachineReady} from "./state.js";
 
 console.log(stock);
 console.log(isCoffeeMachineReady);
+*/
+
+import _ from 'lodash';
+
+
+const myArray = [1,2,3,4];
+const sum = _.sum(myArray);
+console.log(sum);
