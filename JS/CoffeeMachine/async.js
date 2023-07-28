@@ -220,7 +220,6 @@ function withDrawMoney(amount) {
   });
 }
 
-
 function buyCinemaTicket(money) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -263,7 +262,7 @@ function watchMovie() {
 
 watchMovie();
 
-//Promise static method
+/*//Promise static method
 
 //Promise.all
 const promise1 = new Promise((resolve) => setTimeout(() => resolve(1), 1000));
@@ -325,3 +324,4 @@ async function watchMovie() {
 }
 
 watchMovie();
+*/
