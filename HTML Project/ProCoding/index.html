@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ini Website</title> 
+
+        <style>
+            h1, h2, h3, h4, h5, h6{
+                color:#0000ff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+            }
+
+            .p1 {
+                color: red;
+                font-size: 25px;
+                text-decoration: underline;
+                text-transform: uppercase;
+            }
+
+            .p2 {
+                color: blue;
+                font-size: 20px;
+                text-decoration: none;
+                background-color: #ffe6e6;
+            }
+
+            img {
+                width: 400;
+                height: 400;
+
+            }
+
+            #navHead {
+                text-align: center;
+            }
+
+            nav {
+                text-align: center;
+                background-color: #e0b8b8;
+                color: white;
+                font-size: 20px;
+                padding: 5px;
+            }
+
+            button {
+                padding: 6px 0;
+                width: 50%;
+                font-size: 20px;
+                color: white;
+                background-color: green;
+                border: none;
+                border-radius: 10px;                
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1 id="navHead">Oh look a navigation bar!</h1>
+        <nav>
+            <a href="http://localhost:5000">Im just a link</a>
+            <a href="google.com">im just another link</a>
+        </nav>
+
+        <h1>Biggest Heading</h1>
+        <h2>BIG Heading</h2>
+        <h3>Big Heading</h3>
+        <h4>Heading</h4>
+        <h5>small heading</h5>
+        <h6>smallest heading</h6>
+
+        <p class="p1">This is pharagraph</p>
+
+        <p class="p2">Another pharagraph
+        <p class="p2">Another pharagraph again
+        <p class="p2">Yet another pharagraph
+        <p class="p2">Final pharagraph</p>
+
+        <p><a href="http://localhost:5000" target="_blank">This is a link that open in a new window</a></p>
+        <p><a href="http://localhost:5000" target="_self">This is a link that open in its own window</a></p>
+        <p><a href="http://localhost:5000" target="_parent">This is a link that open in the parent tab</a></p>
+
+        <h2>This is some label</h2>
+        <label><b>Name : </b></label>
+        <input type="text" placeholder="Enter your name...">
+        <br>
+        <br>
+
+        <label><b>Age : </b></label>
+        <input type="number" placeholder="Enter your age...">
+        <br>
+        <br>
+
+        <button onclick="buttonReaction()">Im a button, click me as you please</button>
+
+        <h2>Gallery</h2>
+        <img src="./hoshimachi.jpg" alt="hoshimachi ^w^">
+        <img src="./shirokurokami.jpg" alt="Kurokami >:)">
+
+        <p><s>OMG this is a striked throught text :O</s></p>
+
+        <script>
+            const buttonReaction = () => {
+                alert("Ouch");
+            }
+        </script>
+    </body>
+</html>
