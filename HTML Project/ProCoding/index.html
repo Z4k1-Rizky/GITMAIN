@@ -1,110 +1,206 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Ateu Mart</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ini Website</title> 
-
-        <style>
-            h1, h2, h3, h4, h5, h6{
-                color:#0000ff;
-                    text-decoration: none;
-                    text-transform: uppercase;
-            }
-
-            .p1 {
-                color: red;
-                font-size: 25px;
-                text-decoration: underline;
-                text-transform: uppercase;
-            }
-
-            .p2 {
-                color: blue;
-                font-size: 20px;
-                text-decoration: none;
-                background-color: #ffe6e6;
-            }
-
-            img {
-                width: 400;
-                height: 400;
-
-            }
-
-            #navHead {
-                text-align: center;
-            }
-
-            nav {
-                text-align: center;
-                background-color: #e0b8b8;
-                color: white;
-                font-size: 20px;
-                padding: 5px;
-            }
-
-            button {
-                padding: 6px 0;
-                width: 50%;
-                font-size: 20px;
-                color: white;
-                background-color: green;
-                border: none;
-                border-radius: 10px;                
-            }
-        </style>
-
+        <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
+    <style>
+        .header {
+            background-color: #00bfff;
+        }
 
+        .header a {
+            font-size: 20px;
+            color: #f1f1f1;
+            padding: 10px;
+        }
+
+        .logo {
+            vertical-align: middle;
+            width: 60px;
+            height: 60px;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            background-color: #696969;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .nav .categories {
+            float: left;
+            padding: 14px 16px;
+        }
+
+        .nav .categories a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav .addToCart {
+            float: right;
+        }
+
+        .nav .addToCart a {
+            color: red;
+            display: block;
+            background-color: white;
+            padding: 14px 16px;
+            margin-right: 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .slideshow img {
+            width: 100%;
+            height: auto;
+        }
+
+        .items .categoryHeading {
+            background-color: #00bfff;
+            padding: 0;
+            margin: 0;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .gridContents {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        .gridItems {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .gridItems a {
+            text-decoration: none;
+            background-color: orange;
+            font-size: 25px;
+            padding: 5px 5px;
+        }
+    </style>
     <body>
-        <h1 id="navHead">Oh look a navigation bar!</h1>
-        <nav>
-            <a href="http://localhost:5000">Im just a link</a>
-            <a href="google.com">im just another link</a>
-        </nav>
+        <div class="header">
+            <a><img class="logo" src="./assets/logo.png" alt="Logo">ATEU MART</a>
+        </div>
 
-        <h1>Biggest Heading</h1>
-        <h2>BIG Heading</h2>
-        <h3>Big Heading</h3>
-        <h4>Heading</h4>
-        <h5>small heading</h5>
-        <h6>smallest heading</h6>
+        <div class="nav">
+            <ul>
+                <li class="categories"><a href="">Fashion</a></li>
+                <li class="categories"><a href="">Toys</a></li>
+                <li class="categories"><a href="">Electronic</a></li>
 
-        <p class="p1">This is pharagraph</p>
+                <li class="addToCart"><a href="">Add to Cart</a></li>
+            </ul>
+        </div>
 
-        <p class="p2">Another pharagraph
-        <p class="p2">Another pharagraph again
-        <p class="p2">Yet another pharagraph
-        <p class="p2">Final pharagraph</p>
+        <div class="slideshow">
+            <img src="./assets/hoshimachi.jpg" alt="hoshimachi" class="image">    
+        </div>
 
-        <p><a href="http://localhost:5000" target="_blank">This is a link that open in a new window</a></p>
-        <p><a href="http://localhost:5000" target="_self">This is a link that open in its own window</a></p>
-        <p><a href="http://localhost:5000" target="_parent">This is a link that open in the parent tab</a></p>
+        <div class="items">
+            <h1 class="categoryHeading">Fashion</h1>
+            <div class="gridContents">
+                <div class="gridItems">
+                    <img src="./assets/shirokurokami.jpg" alt="kurokami" style="width: 100px;height: 100px;">
+                    <h2>Kurokami</h2>
+                    <h3>$500</h3>
+                    <a href="">Add To Cart</a>
+                </div>
 
-        <h2>This is some label</h2>
-        <label><b>Name : </b></label>
-        <input type="text" placeholder="Enter your name...">
-        <br>
-        <br>
+                <div class="gridItems">
+                    <img src="./assets/Zeta.png" alt="zeta" style="width: 100px;height: 100px;">
+                    <h2>Zeta</h2>
+                    <h3>$500</h3>
+                    <a href="">Add To Cart</a>
+                </div>
+                
+                <div class="gridItems">
+                    <img src="./assets/Zeta.png" alt="zeta" style="width: 100px;height: 100px;">
+                    <h2>Zeta</h2>
+                    <h3>$500</h3>
+                    <a href="">Add To Cart</a>
+                </div>
+                
+                <div class="gridItems">
+                    <img src="./assets/Zeta.png" alt="zeta" style="width: 100px;height: 100px;">
+                    <h2>Zeta</h2>
+                    <h3>$500</h3>
+                    <a href="">Add To Cart</a>
+                </div>
+            </div>
+        </div>
 
-        <label><b>Age : </b></label>
-        <input type="number" placeholder="Enter your age...">
-        <br>
-        <br>
+        <div class="items">
+            <h1 class="categoryHeading">Toys</h1>
+            <div class="gridContents">
+                <div class="gridItems">
+                    <img src="./assets/shirokurokami.jpg" alt="kurokami" style="width: 100px;height: 100px;">
+                    <h2>Kurokami</h2>
+                    <h3>$500</h3>
+                    <a href="">Add To Cart</a>
+                </div>
 
-        <button onclick="buttonReaction()">Im a button, click me as you please</button>
+                <div class="gridItems">
+                    <img src="./assets/Zeta.png" alt="zeta" style="width: 100px;height: 100px;">
+                    <h2>Zeta</h2>
+                    <h3>$500</h3>
+                    <a href="">Add To Cart</a>
+                </div>
+                
+                <div class="gridItems">
+                    <img src="./assets/Zeta.png" alt="zeta" style="width: 100px;height: 100px;">
+                    <h2>Zeta</h2>
+                    <h3>$500</h3>
+                    <a href="">Add To Cart</a>
+                </div>
+                
+                <div class="gridItems">
+                    <img src="./assets/Zeta.png" alt="zeta" style="width: 100px;height: 100px;">
+                    <h2>Zeta</h2>
+                    <h3>$500</h3>
+                    <a href="">Add To Cart</a>
+                </div>
+            </div>
+        </div>
 
-        <h2>Gallery</h2>
-        <img src="./hoshimachi.jpg" alt="hoshimachi ^w^">
-        <img src="./shirokurokami.jpg" alt="Kurokami >:)">
+        <div class="items">
+            <h1 class="categoryHeading">Electronic</h1>
+            <div class="gridContents">
+                <div class="gridItems">
+                    <img src="./assets/shirokurokami.jpg" alt="kurokami" style="width: 100px;height: 100px;">
+                    <h2>Kurokami</h2>
+                    <h3>$500</h3>
+                    <a href="">Add To Cart</a>
+                </div>
 
-        <p><s>OMG this is a striked throught text :O</s></p>
-
-        <script>
-            const buttonReaction = () => {
-                alert("Ouch");
-            }
-        </script>
+                <div class="gridItems">
+                    <img src="./assets/Zeta.png" alt="zeta" style="width: 100px;height: 100px;">
+                    <h2>Zeta</h2>
+                    <h3>$500</h3>
+                    <a href="">Add To Cart</a>
+                </div>
+                
+                <div class="gridItems">
+                    <img src="./assets/Zeta.png" alt="zeta" style="width: 100px;height: 100px;">
+                    <h2>Zeta</h2>
+                    <h3>$500</h3>
+                    <a href="">Add To Cart</a>
+                </div>
+                
+                <div class="gridItems">
+                    <img src="./assets/Zeta.png" alt="zeta" style="width: 100px;height: 100px;">
+                    <h2>Zeta</h2>
+                    <h3>$500</h3>
+                    <a href="">Add To Cart</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
