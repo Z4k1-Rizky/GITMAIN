@@ -1,0 +1,37 @@
+body {
+    background-image: url("/assets/hoshimachi.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.styledWithCSS {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.links 
+    #styled:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+    }
+      
+    #styled:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+    }
+      
+    #styled:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+      
+    #styled:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+    }

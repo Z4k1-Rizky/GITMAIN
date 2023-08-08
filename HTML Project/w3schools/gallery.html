@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Image Gallery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-value=1">
+        <link rel="stylesheet" href="./style/gallery.css">
+    </head>
+    <body>
+        <div class="images">
+            <img src="./assets/hoshimachi.jpg" alt="Hoshimachi Suisei">
+            <img src="./assets/shirokurokami.jpg" alt="Kurokami Fubuki">
+            <img src="./assets/Zeta.png" alt="Vestia Zeta">
+        </div>
+        <br>
+        <img id="HG3" usemap="#HIDG3" src="./assets/holoid-gen-3-cover-dd5efc27b4d8389ab85da4393b11eda7.png" alt="Hololive ID Gen 3">
+        <map name="HIDG3">
+            <area alt="Vestia Zeta" title="Vestia Zeta" href="./assets/Vestia-Zeta-800x453.jpg" coords="216,95,212,112,189,116,203,129,190,144,207,147,144,169,98,174,114,215,86,267,124,266,79,294,98,339,133,351,160,346,156,386,139,437,278,447,267,375,290,356,294,321,323,345,326,332,315,291,325,272,325,252,296,195,285,165,278,127,274,93" shape="poly">
+            <area alt="Kobo Kanaeru" title="Kobo Kanaeru" href="./assets/Kobo-Kanaeru-800x450.jpg" coords="424,120,406,120,381,148,370,165,329,193,311,220,334,242,338,273,342,295,348,307,341,320,340,332,347,350,353,368,356,393,363,438,362,444,381,449,398,366,402,398,403,446,429,443,426,443,440,386,468,367,480,364,510,374,523,365,525,327,526,282,513,242,490,209,470,210,462,157,459,128" shape="poly">
+            <area alt="Kaela Kovalskia" title="Kaela Kovalskia" href="./assets/Kaela-Kovalskia-800x460.jpg" coords="628,63,596,75,594,98,580,101,583,127,585,140,580,171,581,181,566,199,544,206,524,176,510,165,503,185,521,206,528,231,540,245,557,260,569,264,559,282,543,325,533,368,517,415,485,429,454,447,665,446,653,305,677,275,706,249,717,254,724,241,694,171,674,125,685,105,687,98" shape="poly">
+        </map>
+        <br>
+        <picture>
+            <source media="(min-width: 650px)" srcset="./assets/hoshimachi.jpg">
+            <source media="(min-width: 465px)" srcset="./assets/shirokurokami.jpg">
+            <img src="./assets/logo.png">
+        </picture>          
+    </body>
+</html>
