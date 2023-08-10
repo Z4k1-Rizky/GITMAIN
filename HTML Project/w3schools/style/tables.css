@@ -1,32 +1,32 @@
 table,
 th,
 td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 5px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px;
 }
 
 .sizedTables {
-    margin-top: 20px;
-    width: 80%;
+	margin-top: 20px;
+	width: 80%;
 }
 
 .absensi {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 .absensi th {
-    padding: 5px 20px 5px 20px;
+	padding: 5px 20px 5px 20px;
 }
 
 .absensi th:nth-child(even), .absensi td:nth-child(even) {
-    background-color: rgba(150, 212, 212, 0.4);
+	background-color: rgba(150, 212, 212, 0.4);
 }
 
 .absensi tr:nth-child(even) {
-    background-color: rgba(150, 212, 212, 0.4);
+	background-color: rgba(150, 212, 212, 0.4);
 }
 
 .absensi th:hover, .absensi td:hover {
-    background-color: rgb(255, 0, 0);
+	background-color: rgb(255, 0, 0);
 }

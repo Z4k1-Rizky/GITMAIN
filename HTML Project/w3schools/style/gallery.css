@@ -1,13 +1,13 @@
 .images {
-    display: block;
+	display: block;
 }
 
 .images img {
-    width: 33%;
-    height: auto;
+	width: 33%;
+	height: auto;
 }
 
 #HG3 {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
