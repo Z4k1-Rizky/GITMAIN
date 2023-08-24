@@ -1,0 +1,107 @@
+/* this is an Universal selector */
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* This is an element selector */
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+/* This is a class selector  */
+.center {
+  text-align: center;
+}
+
+p.center {
+  font: bold;
+}
+
+/* This is an id selector */
+#big {
+  font-size: 30px;
+}
+
+.big {
+  font-size: 25px;
+}
+
+/* Create background image */
+.bgh2 {
+  background-image: url("../assets/shirokurokami.jpg");
+  background-repeat: repeat-x;
+  background-position: right;
+}
+
+.bgh2s {
+  background-image: url("../assets/shirokurokami.jpg");
+  background-attachment: scroll;
+  background-repeat: repeat-y;
+}
+
+.bgh2f {
+  background-image: url("../assets/shirokurokami.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Now shorten the background styling */
+/* !order : color image repeat attachment position */
+.bgh2sh {
+  font-size: 50px;
+  background: url("../assets/hoshimachi.jpg") no-repeat fixed;
+}
+
+.border {
+  border-left: 5px solid blue;
+  background-color:lightblue;
+  border-radius: 8px;
+}
+
+.pbm {
+  padding: 15px;
+  border: 5px solid yellow;
+  outline-style: solid;
+  outline-width: 5px;
+  outline-color: red;
+  outline-offset: 5px;
+  margin: auto;
+}
+
+.tf {
+  color: white;
+  background-color: black;
+  text-align: center;
+  text-align-last: right;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  text-indent: 50px;
+  letter-spacing: 5px;
+  line-height: 0.7;
+  word-spacing: 10px;
+  white-space: normal;
+  text-shadow: 0 0 8px green, 0 0 10px blue;
+}
+
+.va {
+  vertical-align: super;
+  text-transform: lowercase;
+}
+
+.tdl {
+  /* text-decoration-line: underline overline line-through;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 3px; */
+  text-decoration: underline overline line-through red wavy 3px;
+}
