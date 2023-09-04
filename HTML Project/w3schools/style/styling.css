@@ -5,6 +5,7 @@
 
 /* This is an element selector */
 body {
+  font-size: 100%;
   background-color: lightblue;
 }
 
@@ -33,7 +34,7 @@ p.center {
 }
 
 .big {
-  font-size: 25px;
+  font-size: 1.5em;
 }
 
 /* Create background image */
@@ -104,4 +105,63 @@ p.center {
   text-decoration-style: wavy;
   text-decoration-thickness: 3px; */
   text-decoration: underline overline line-through red wavy 3px;
+}
+
+.serif {
+  font-family: serif;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.fantasy {
+  font-family: fantasy;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 5vw;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+/* 
+font shorthand property :
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+example :
+font: italic small-caps bold 1.5em serif, sans-serif; 
+*/
+
+.link:link, .link:visited {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.link:hover, .link:active {
+  background-color: black;
+  color: white;
+  cursor: crosshair;
 }
