@@ -3,7 +3,8 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/home/zxr/Arduino/**"
             ],
             "defines": [],
             "cStandard": "c17",
